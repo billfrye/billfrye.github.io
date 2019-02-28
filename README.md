@@ -1,2 +1,3 @@
 # billfrye.github.io
-Personal page
+
+Personal page for Bill Frye

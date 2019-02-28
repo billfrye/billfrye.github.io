@@ -1,30 +1,160 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Activity 1: Bill Frye</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bill Frye - Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Titillium+Web" rel="stylesheet">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      .scroll-class {
+        height:200px;
+        {% comment %} overflow-y: scroll; {% endcomment %}
+      }
+    </style>
 </head>
-<div>
-  <h1>
-    Bill Frye
-  </h1>
-  <br>
-  <br>
-  <img src="https://media.licdn.com/dms/image/C4D03AQHHxHTItE4ccg/profile-displayphoto-shrink_200_200/0?e=1543449600&v=beta&t=mP7YWkgidEPujmHJAB_nX82fND3TbOO33qNCjx7LW54" />
-</div>
   <body>
-    <div>
-      <br>
-        <div>
-          <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-          </p>
-          <p>
-              Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-          </p>
-        </div>
-      <br>
+<main role="main">
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <div class="container" "center-block">
+        <p>
+            <a href="mailto:bill.frye2@gmail.com">
+                <img id="image" src="images/Bill_Headshot.jpg" alt="Bill Frye" height="300" class="img-circle">
+            </a>
+        </p>
+      </div>
+      <h1 class="display-3">Bill Frye</h1>
+      <p>
+      <a href="mailto:bill.frye2@gmail.com?Subject=Hello%20Bill,%20Found%20your%20email%20on%20your%20portfolio%20site" target="_top">bill.frye2@gmail.com</a> | 
+        <a href="tel:15124617786" target="_top">1-512-461-7786</a> | 
+        <a href="./images/BillFrye_Resume.pdf" target="top">Resume</a> |
+        <a href="www.linkedin.com/in/billfrye/" target="top">LinkedIn</a>
+      </p>
+      <p>
+        A former software designer looking for a full-time opportunity in Data Science or Data Analytics, 
+        who has experience in Excel, VBA, Python, SQL &amp HTML. A quick &amp enthusiastic learner who loves 
+        challenges and looks for opportunities to acquire new skills; who is also a great team player.
+      </p>
     </div>
-  </body>
+  </div>
 
+  <div class="container scroll-class">
+    <div class="row">
+      <div class="col-md-4">
+        <h2>School District Project</h2>
+        <p>
+          This project combines CSV school information with CSV student information to analyze standardize 
+          test result differences between schools in the same school district,
+        </p>  
+        <p>
+        <a class="btn btn-secondary" 
+              target="blank"
+              href="https://github.com/billfrye/HW_04-Numpy-Pandas/blob/master/PyCitySchools/PyCitySchools.ipynb" 
+              role="button">View Jupyter Notebook &raquo;
+          </a>
+        </p>
+      </div>
+      <div class="col-md-4">
+        <h2>Matplotlib Charting</h2>
+        <p>This is a project that takes Uber city data and combines it with ride data to look at driver 
+           allocation, average fares and number of rides between rural, suburban and urban locations.
+        </p>
+        <p>
+          <a class="btn btn-secondary" target="blank"
+             href="https://github.com/billfrye/HW_05-Matplotlib/blob/master/Pyber/pyber_notebook.ipynb"
+             role="button">View Jupyter Notebook &raquo;
+          </a>
+        </p>
+      </div>
+      <div class="col-md-4">
+        <h2>SQL Project</h2>
+        <p>
+          Project to perform an array of SQL select statements using MySQL and the MySQL SAKILA sample database. 
+          Type of selects used included the "IN" condition, Group By, Order BY, Outer Joins, and sub queries.
+        </p>
+        <p><a class="btn btn-secondary" target="blank"
+              href="https://github.com/billfrye/HW_10_SQL/blob/master/10_SQL_HW.sql" 
+              role="button">View SQL &raquo;</a></p>
+      </div>
+<!--      
+     <div class="col-md-4">
+        <h2>SQL Project 2</h2>
+        <p>
+          Project to perform an array of SQL select statements using MySQL and the MySQL SAKILA sample database. 
+          Type of selects used included the "IN" condition, Group By, Order BY, Outer Joins, and sub queries.
+        </p>
+        <p><a class="btn btn-secondary" target="blank"
+              href="https://github.com/billfrye/HW_10_SQL/blob/master/10_SQL_HW.sql" 
+              role="button">View SQL &raquo;</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>SQL Project 3</h2>
+        <p>
+          Project to perform an array of SQL select statements using MySQL and the MySQL SAKILA sample database. 
+          Type of selects used included the "IN" condition, Group By, Order BY, Outer Joins, and sub queries.
+        </p>
+        <p><a class="btn btn-secondary" target="blank"
+              href="https://github.com/billfrye/HW_10_SQL/blob/master/10_SQL_HW.sql" 
+              role="button">View SQL &raquo;</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>SQL Project 4</h2>
+        <p>
+          Project to perform an array of SQL select statements using MySQL and the MySQL SAKILA sample database. 
+          Type of selects used included the "IN" condition, Group By, Order BY, Outer Joins, and sub queries.
+        </p>
+        <p><a class="btn btn-secondary" target="blank"
+              href="https://github.com/billfrye/HW_10_SQL/blob/master/10_SQL_HW.sql" 
+              role="button">View SQL &raquo;</a></p>
+      </div>
+    </div>
+-->      
+  </div> <!-- /container -->
+</main>
+
+<footer class="container">
+  <p>&copy; Bill Frye 2019</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!--<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"></script>-->
+<script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script></body>
 </html>
+
+<!-- 
+<body>
+<div>
+  <p>
+  <a href="mailto:bill.frye2@gmail.com?Subject=Hello%20Bill,%20Found%20your%20email%20on%20your%20portfolio%20site" target="_top">bill.frye2@gmail.com</a> | 
+    <a href="tel:15124617786" target="_top">1-512-461-7786</a> | 
+    <a href="./images/BillFrye_Resume.pdf" target=_top>Resume</a>
+  </p>
+</div>
+</body>
+<div class="container-fluid">
+
+    <footer style="background-color:#85bb65">
+       <a href="mailto:bill.frye2@gmail.com">
+          <i class="fa fa-envelope"></i>
+        </a>
+        <a href="tel:15124617786" target=_blank>
+          <i class="fa fa-tel"></i>
+        </a>
+        <a href="https://github.com/billfrye" target="_blank">
+            <i class="fa fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/billfrye" target="_blank">
+            <i class="fa fa-linkedin"></i>
+        </a>
+    </footer>
+</div>
+-->
+
+
