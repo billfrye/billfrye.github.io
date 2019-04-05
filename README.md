@@ -1,4 +1,4 @@
 
 # billfrye.github.io
 
-Personal page for Bill Frye
+Portfolio page for Bill Frye
